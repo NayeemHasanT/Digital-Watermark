@@ -1,7 +1,5 @@
-clc
-clear all
-%
-img=imread('*.tiff');        %#read in MATLAB's stock image
+[fname pthname]=uigetfile('*.jpg;*.png;*.tiff;*bmp','Select the Asset Image'); %select image
+img=imread([pthname fname]);         %#read host image
 imgDouble=im2double(img);        %#convert uint8 to double
 imgGray=rgb2gray(img);           %#convert RGB image to grayscale
 A=im2double(imgGray);
