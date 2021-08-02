@@ -87,8 +87,8 @@ Rco = corrcoef(x1,x2);
 
 
 %...............................Embedding.......................
-xp1=(.5*(x1d(number)+x2d(number)))+.2*w;
-xp2=(.5*(x1d(number)+x2d(number)))-.2*w;
+xp1=(.5*(x1d(number)+x2d(number)))+.1*w;
+xp2=(.5*(x1d(number)+x2d(number)))-.1*w;
 
 x1d(number)=xp1;
 x2d(number)=xp2;
